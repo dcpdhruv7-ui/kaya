@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kaya | Premium Workout Tracking</title>
-    <link rel="stylesheet" href="styles.css?v=phase1-entry" />
+    <link rel="stylesheet" href="/styles.css?v=supabase-auth" />
   </head>
   <body>
+    <div class="splash-screen" data-splash aria-hidden="true">
+      <div class="splash-content">
+        <div class="splash-logo" aria-label="Kaya" data-splash-logo></div>
+        <p data-splash-hook>Track your progress.</p>
+      </div>
+    </div>
+
     <div class="page-shell" data-app-shell>
       <header class="site-header" aria-label="Primary navigation">
         <a class="brand" href="#" aria-label="Kaya home" data-go-landing>
@@ -165,6 +172,8 @@
               </button>
 
               <div class="auth-divider"><span>or use email</span></div>
+
+              <p class="setup-warning" data-recaptcha-warning hidden></p>
 
               <div class="auth-tabs" role="tablist" aria-label="Authentication">
                 <button class="auth-tab active" type="button" data-auth-mode="signin">
@@ -381,6 +390,6 @@
       </main>
     </div>
 
-    <script src="script.js?v=phase1-entry"></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
