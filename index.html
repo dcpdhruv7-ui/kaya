@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaya | Premium Workout Tracking</title>
+    <link rel="stylesheet" href="styles.css?v=phase1-entry" />
+  </head>
+  <body>
+    <div class="page-shell" data-app-shell>
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="#" aria-label="Kaya home" data-go-landing>
+          <span class="brand-mark">K</span>
+          <span>Kaya</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Kaya sections">
+          <a href="#progress">Progress</a>
+          <a href="#lifts">Lifts</a>
+          <a href="#plans">Plans</a>
+        </nav>
+
+        <div class="nav-actions" data-header-auth>
+          <button class="ghost-button" type="button" data-auth-open="signin">
+            Sign in
+          </button>
+          <button class="solid-button" type="button" data-auth-open="signup">
+            Sign up
+          </button>
+        </div>
+
+        <div class="nav-actions is-hidden" data-header-app>
+          <button class="ghost-button" type="button" data-logout>
+            Reset
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero app-view active" data-view="landing" aria-label="Kaya workout tracking home">
+          <img
+            class="hero-image"
+            src="assets/kaya-hero.png"
+            alt="Athlete in a dark strength training gym"
+          />
+          <div class="hero-vignette"></div>
+          <div class="hero-grid" aria-hidden="true"></div>
+
+          <div class="hero-content">
+            <p class="eyebrow">The gym app that actually tracks your progress.</p>
+            <h1>The operating system for your physique.</h1>
+            <p class="hero-copy">
+              Track training, nutrition, calories, body metrics, and progress
+              inside one premium fitness command center.
+            </p>
+
+            <div class="hero-actions">
+              <button class="solid-button large" type="button" data-auth-open="signup">
+                Start tracking
+              </button>
+              <button class="glass-button large" type="button" data-auth-open="signin">
+                I already train with Kaya
+              </button>
+            </div>
+          </div>
+
+          <aside class="lift-panel" id="lifts" aria-label="Workout progress snapshot">
+            <div class="panel-header">
+              <span>Today</span>
+              <strong>Upper Power</strong>
+            </div>
+            <div class="lift-row">
+              <span>Bench press</span>
+              <strong>102.5 kg</strong>
+            </div>
+            <div class="lift-row">
+              <span>Weighted pull-up</span>
+              <strong>+25 kg</strong>
+            </div>
+            <div class="lift-row">
+              <span>Incline press</span>
+              <strong>37.5 kg</strong>
+            </div>
+            <div class="progress-track" aria-label="Session progress">
+              <span style="--progress: 74%"></span>
+            </div>
+          </aside>
+
+          <div class="metric-strip" aria-label="Kaya performance metrics">
+            <article class="metric-card">
+              <span class="metric-label">Total volume</span>
+              <strong>18,420 kg</strong>
+              <small>+12% this month</small>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Active streak</span>
+              <strong>16 days</strong>
+              <small>5 workouts logged</small>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">New PRs</span>
+              <strong>7</strong>
+              <small>Squat, press, row</small>
+            </article>
+          </div>
+        </section>
+
+        <section class="preview-band app-view active" data-landing-extra id="progress" aria-label="Progress preview">
+          <div class="section-heading">
+            <p class="eyebrow">Phase one preview</p>
+            <h2>Built around progression, not guesswork.</h2>
+          </div>
+
+          <div class="preview-grid">
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">PR</div>
+              <h3>Lift history</h3>
+              <p>Follow strength trends across every major movement.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">%</div>
+              <h3>Body metrics</h3>
+              <p>Keep weight, measurements, and physique markers together.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">OK</div>
+              <h3>Session flow</h3>
+              <p>Log working sets fast without losing focus mid-workout.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="auth-screen app-view" data-view="auth" aria-label="Kaya authentication">
+          <img
+            class="hero-image"
+            src="assets/kaya-hero.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <div class="auth-backdrop"></div>
+
+          <div class="auth-shell">
+            <button class="back-button" type="button" data-go-landing>
+              Back to landing
+            </button>
+
+            <div class="auth-panel" role="region" aria-label="Sign in or sign up">
+              <div class="auth-brand">
+                <span class="brand-mark">K</span>
+                <span>Kaya</span>
+              </div>
+
+              <div class="auth-intro">
+                <p class="eyebrow">Premium access</p>
+                <h2 data-auth-heading>Welcome back</h2>
+                <p>
+                  Sign in to continue your physique command center, or create a
+                  new profile and complete your setup.
+                </p>
+              </div>
+
+              <button class="google-button" type="button" data-google-auth>
+                <span class="google-mark" aria-hidden="true">G</span>
+                Continue with Google
+              </button>
+
+              <div class="auth-divider"><span>or use email</span></div>
+
+              <div class="auth-tabs" role="tablist" aria-label="Authentication">
+                <button class="auth-tab active" type="button" data-auth-mode="signin">
+                  Sign in
+                </button>
+                <button class="auth-tab" type="button" data-auth-mode="signup">
+                  Sign up
+                </button>
+              </div>
+
+              <form class="auth-form active" data-auth-form="signin">
+                <label>
+                  Email
+                  <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required />
+                </label>
+                <label>
+                  Password
+                  <input type="password" name="password" autocomplete="current-password" placeholder="Enter password" required />
+                </label>
+                <button class="solid-button full" type="submit">Sign in</button>
+                <p class="form-toast" data-auth-message aria-live="polite"></p>
+              </form>
+
+              <form class="auth-form" data-auth-form="signup">
+                <label>
+                  Name
+                  <input type="text" name="name" autocomplete="name" placeholder="Your name" required />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required />
+                </label>
+                <label>
+                  Password
+                  <input type="password" name="password" autocomplete="new-password" placeholder="Create password" required />
+                </label>
+                <button class="solid-button full" type="submit">Create account</button>
+                <p class="form-toast" data-auth-message aria-live="polite"></p>
+              </form>
+            </div>
+
+            <aside class="auth-proof" aria-label="Kaya product highlights">
+              <span>Included after setup</span>
+              <strong>Training logs, calories, body metrics, and progress snapshots.</strong>
+            </aside>
+          </div>
+        </section>
+
+        <section class="onboarding-screen app-view" data-view="onboarding" aria-label="Kaya onboarding">
+          <div class="flow-shell">
+            <div class="flow-card">
+              <div class="flow-topline">
+                <div class="auth-brand">
+                  <span class="brand-mark">K</span>
+                  <span>Kaya</span>
+                </div>
+                <span data-step-count>Step 1 of 3</span>
+              </div>
+
+              <div class="step-progress" aria-hidden="true">
+                <span data-step-progress></span>
+              </div>
+
+              <form data-onboarding-form novalidate>
+                <fieldset class="onboarding-step active" data-step="0">
+                  <p class="eyebrow">Goal</p>
+                  <h2>What are we building toward?</h2>
+                  <div class="choice-grid">
+                    <label><input type="radio" name="goal" value="Fat loss" required /> <span>Fat loss</span></label>
+                    <label><input type="radio" name="goal" value="Muscle gain" /> <span>Muscle gain</span></label>
+                    <label><input type="radio" name="goal" value="Maintain" /> <span>Maintain</span></label>
+                    <label><input type="radio" name="goal" value="Recomposition" /> <span>Recomposition</span></label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="onboarding-step" data-step="1">
+                  <p class="eyebrow">Body metrics</p>
+                  <h2>Add your baseline.</h2>
+                  <div class="form-grid">
+                    <label>
+                      Age
+                      <input type="number" name="age" min="13" max="100" placeholder="24" required />
+                    </label>
+                    <label>
+                      Height
+                      <input type="number" name="height" min="90" max="250" placeholder="175 cm" required />
+                    </label>
+                    <label>
+                      Weight
+                      <input type="number" name="weight" min="30" max="300" placeholder="72 kg" required />
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="onboarding-step" data-step="2">
+                  <p class="eyebrow">Training profile</p>
+                  <h2>Set your weekly rhythm.</h2>
+                  <div class="form-grid">
+                    <label>
+                      Training level
+                      <select name="trainingLevel" required>
+                        <option value="">Choose level</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                      </select>
+                    </label>
+                    <label>
+                      Workout days per week
+                      <input type="number" name="workoutDays" min="1" max="7" placeholder="5" required />
+                    </label>
+                    <label>
+                      Diet preference
+                      <select name="dietPreference" required>
+                        <option value="">Choose diet</option>
+                        <option>Vegetarian</option>
+                        <option>Non-Vegetarian</option>
+                      </select>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="flow-actions">
+                  <button class="ghost-button" type="button" data-step-back>
+                    Back
+                  </button>
+                  <button class="solid-button" type="submit" data-step-next>
+                    Continue
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="dashboard-screen app-view" data-view="dashboard" aria-label="Kaya dashboard">
+          <div class="dashboard-shell">
+            <div class="dashboard-hero">
+              <div>
+                <p class="eyebrow">Dashboard</p>
+                <h1>Your physique command center.</h1>
+                <p class="hero-copy">
+                  Training, nutrition, calories, body metrics, and progress are
+                  now organized around your current goal.
+                </p>
+              </div>
+              <button class="ghost-button" type="button" data-logout>
+                Logout and reset
+              </button>
+            </div>
+
+            <div class="dashboard-grid" id="plans">
+              <article class="metric-card dashboard-card">
+                <span class="metric-label">Current goal</span>
+                <strong data-dashboard-goal>Not set</strong>
+                <small data-dashboard-profile>Onboarding complete</small>
+              </article>
+              <article class="metric-card dashboard-card">
+                <span class="metric-label">Weekly training</span>
+                <strong data-dashboard-days>0 days</strong>
+                <small data-dashboard-level>Level pending</small>
+              </article>
+              <article class="metric-card dashboard-card">
+                <span class="metric-label">Diet preference</span>
+                <strong data-dashboard-diet>Not set</strong>
+                <small>Nutrition tracking ready</small>
+              </article>
+            </div>
+
+            <div class="app-grid">
+              <aside class="lift-panel dashboard-lift" aria-label="Workout progress snapshot">
+                <div class="panel-header">
+                  <span>Today</span>
+                  <strong>Upper Power</strong>
+                </div>
+                <div class="lift-row">
+                  <span>Bench press</span>
+                  <strong>102.5 kg</strong>
+                </div>
+                <div class="lift-row">
+                  <span>Weighted pull-up</span>
+                  <strong>+25 kg</strong>
+                </div>
+                <div class="lift-row">
+                  <span>Incline press</span>
+                  <strong>37.5 kg</strong>
+                </div>
+                <div class="progress-track" aria-label="Session progress">
+                  <span style="--progress: 74%"></span>
+                </div>
+              </aside>
+
+              <article class="tracker-card">
+                <div class="panel-header">
+                  <span>Workout tracker</span>
+                  <strong>Next set</strong>
+                </div>
+                <div class="lift-row">
+                  <span>Back squat</span>
+                  <strong>4 x 6</strong>
+                </div>
+                <div class="lift-row">
+                  <span>Calories target</span>
+                  <strong>2,450</strong>
+                </div>
+                <div class="lift-row">
+                  <span>Body weight trend</span>
+                  <strong>+0.4 kg</strong>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js?v=phase1-entry"></script>
+  </body>
+</html>
